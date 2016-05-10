@@ -1,0 +1,26 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#container_CarListPart {
+    margin: auto;
+    width: 50%;
+}
+
+#container_CarRegisterPart {
+    margin: auto;
+    width: 50%;
+}
+
+table {
+    border: solid 1px black;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+
+#table_InputValueInCarRegisterPart {
+    text-align: left;
+    padding: 10px;
+}

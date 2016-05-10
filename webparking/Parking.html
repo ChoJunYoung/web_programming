@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ParkingCss.css">
+    <title>주차장 관리 시스템</title>
+</head>
+<body>
+
+<div id="container_CarListPart">
+    <table id="table_InfoInCarListPart">
+        <tr>
+            <th></th>
+            <th>제조사</th>
+            <th>차종</th>
+            <th>가격</th>
+            <th>크기</th>
+            <th>상태</th>
+        </tr>
+        <tr>
+            <td colspan="2" id="totalCar">등록 차량수 : 0</td>
+            <td></td>
+            <td rowspan="2" colspan="3">
+                <button id="button_ParkingIn" onclick="parking_Setting(this.value)" value="입고">입고</button>
+                <button id="button_ParkingOut" onclick="parking_Setting(this.value)" value="출고">출고</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="parkingCar">입고 차량수 : 0</td>
+        </tr>
+
+
+    </table>
+</div>
+
+<div id="container_CarRegisterPart">
+    <table id="table_InputValueInCarRegisterPart">
+        <tr>
+            <td>제조사</td>
+            <td><input list="list_Brand" id="register_Brand"></td>
+        </tr>
+        <tr>
+            <td>차종</td>
+            <td><input type="text" id="register_Kind"></td>
+        </tr>
+        <tr>
+            <td>가격</td>
+            <td><input type="text" id="register_Price" onkeydown="return onlyNumberInput(event)" style="ime-mode: disabled"></td>
+        </tr>
+        <tr>
+            <td>크기</td>
+            <td>
+                <select id="register_Size">
+                    <option>경차</option>
+                    <option>소형</option>
+                    <option>중형</option>
+                    <option>대형</option>
+                    <option>버스</option>
+                    <option>소형SUV</option>
+                    <option>SUV</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" id="button_RegisterIn" onclick="input_CarOnList()" value="차량 등록">
+                <input type="button" id="button_RegisterDelete" onclick="delete_CarOnList()" value="차량 삭제"></td>
+        </tr>
+    </table>
+</div>
+<datalist id="list_Brand">
+    <option>기아</option>
+    <option>현대</option>
+    <option>르노삼성</option>
+    <option>쉐보레</option>
+    <option>외제차</option>
+    <option>기타</option>
+</datalist>
+<script type="text/javascript" src="ParkingJs.js"></script>
+</body>
+</html>
