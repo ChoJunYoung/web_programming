@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+#outline{
+    width: 60%;
+    margin: auto;
+}
+
+#pointOutline{
+    float: right;
+    border: 1px solid black;
+    width: 30%;
+}

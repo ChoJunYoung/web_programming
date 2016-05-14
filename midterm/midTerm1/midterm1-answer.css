@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    font-size: 15pt;
+    font-family: arial, sens-serif;
+}
+
+.subheads{
+    color: white;
+    background-color: blue;
+}
+
+#firstword{
+    font-size: 25pt;
+    font-family: Arial, sans-serif;
+    font-weight:bold;
+}
+
+#refsite{
+    position: fixed;
+    right:0px;
+    top:0px;
+}
+
+#refsite > ul{
+    border:1px solid black;
+}
+
+#main{
+    float: left;
+    display: block;
+    width: 80%;
+}
+
+img{
+    float: left;
+}
+
+table,td,th,tr{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
