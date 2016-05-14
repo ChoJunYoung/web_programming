@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="calculation.css" rel="stylesheet" type="text/css"></link>
+		<script type="text/javascript" src="calculation.js"></script>
+		<title>계산기</title>
+	</head>
+	<body onkeydown="inputKeyDown(event)">
+		<div id = "content">
+			<div id = "inputOutline">
+				<div id = "input">
+					<p id = "beforeInput"></p>
+					<p id = "curInput">0</p>
+				</div>
+				<div id = "inputButton">
+					<table>
+						<tr>
+							<td onclick="input(this)" >7</td>
+							<td onclick="input(this)" >8</td>
+							<td onclick="input(this)" >9</td>
+							<td onclick="input(this)" >←</td>
+							<td onclick="input(this)" >*</td>
+						</tr>
+						<tr>
+							<td onclick="input(this)">4</td>
+							<td onclick="input(this)">5</td>
+							<td onclick="input(this)">6</td>
+							<td onclick="input(this)">C</td>
+							<td onclick="input(this)">-</td>
+						</tr>
+						<tr>
+							<td onclick="input(this)" >1</td>
+							<td onclick="input(this)" >2</td>
+							<td onclick="input(this)" >3</td>
+							<td onclick="input(this)" >/</td>
+							<td onclick="input(this)" >+</td>
+						</tr>
+						<tr>
+							<td onclick="input(this)" >±</td>
+							<td onclick="input(this)" >0</td>
+							<td onclick="input(this)" >.</td>
+							<td onclick="input(this)" colspan="3" >=</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id = "historyOutline">
+				<b>History</b>
+				<ul id = "history">
+					
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

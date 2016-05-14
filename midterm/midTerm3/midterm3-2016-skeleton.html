@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>연락처 페이지</title>
+    <link href="midterm3-2016.css" rel="stylesheet" type="text/css"></link>
+    <script type="text/javascript" src="midterm3-2016.js"></script>
+</head>
+<body>
+<header>
+    연락처 페이지
+</header>
+<nav>
+    <ul>
+        <li onclick="insert()">추가</li>
+        <li>정렬</li>
+    </ul>
+</nav>
+<article>
+
+</article>
+<footer>
+    < Copyright 2015-2016 by 충남대학교 컴퓨터공학과 웹 프로그래밍 과목 >
+</footer>
+<div id="input">
+    <form action="#">
+        <div style="float: right">
+            <img src="X.png" width="10px" height="10px">
+        </div>
+        <div style="float: left;">
+            <div>이름</div>
+            <div>나이</div>
+            <div>전화번호</div>
+            <div>성별</div>
+        </div>
+        <div style="float:right;">
+            <div>
+                <input name="name" maxlength="5" type="text"/>
+            </div>
+            <div>
+                <input name="age" min="0" type="number"/>
+            </div>
+            <div>
+                <input name="phone" type="text"/>
+            </div>
+            <div> 
+                남자 :<input name="sex" type="radio" value="M"> &nbsp;&nbsp;&nbsp;
+                여자 :<input name="sex" type="radio" value="W">
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="등록"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

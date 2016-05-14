@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>크랩스 게임</title>
+	<link href="midterm2-2016.css" rel="stylesheet" type="text/css"></link>
+	<script type="text/javascript" src="midterm2-2016.js"></script>
+</head>
+<body>
+<div id = "outline">
+	<h1>크랩스 게임</h1>
+	<img id="di1" src="./dice0.jpg">
+	<img id="di2" src="./dice0.jpg">
+	<div id = "pointOutline">
+		Point
+		<ul id = "point">
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+		</ul>
+	</div>
+	<br/><br/><br/>
+	<button style="display: none" id = "diceDraw" onclick = "diceDraw()">주사위 던지기</button>
+	<button style="display: block;" id = "gameStart" onclick = "gameStart()">게임 시작</button>
+	<br>판: <span id="gamePan">게임시작 버튼을 누르십시오.</span>
+	<br/><br/>	
+	총합 : <span id="gamePoint"></span><br/><br/>
+	판돈 : <span id="gameMoney"></span>
+</div>
+</body>
+</html>

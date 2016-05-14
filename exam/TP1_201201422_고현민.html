@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" type="text/css" href="TP1_201201422.css">
+
+	<title>주차장관리웹앱</title>
+</head>
+<body onload="init()">
+	<div id="main">
+		<div id="ListOfCarsDiv" class="
+w3-card-8">
+			<div class="w3-container w3-red">
+				<h3>주차장</h3>
+			</div>
+			<table class="w3-table w3-bordered w3-striped w3-border" id="ListOfTable">
+				<thead>
+					<tr class="w3-dark-grey row">
+						<th class="row"></th>
+						<th class="row">제조사</th>
+						<th class="row">차종</th>
+						<th class="row">가격</th>
+						<th class="row">크기</th>
+						<th class="row">상태</th>
+					</tr>
+				</thead>
+			</table>
+			<div id="ListStateAndBehavior">
+				<div id="ListState">
+					<span id="EnrollOfNumber"></span><br>
+					<span id="ParkInOfNumber"></span>
+				</div>
+				<div id="ListButtonDiv">
+					<button class="w3-btn w3-dark-grey" onclick="ParkIn()">입고</button>
+					<button class="w3-btn w3-dark-grey" onclick="ParkOut()">출고</button>
+				</div>
+			</div>
+		</div>
+		<span id="MAXNUMBEROFENROLL"></span><br>
+		<span id="MAXNUMBEROFPARK"></span>
+		<div id="EnrollOrDeleteDiv" class="
+w3-card-8">
+			<div class="w3-container w3-red">
+				<h3>차량 등록 및 삭제</h3>
+			</div>
+			<form onsubmit="return false;">
+				<span>제조사</span><input list="Production_Company" id="Production_Company_Value">
+				  <datalist id="Production_Company">
+				    <option value="기아">
+				    <option value="현대">
+				    <option value="르노삼성">
+				    <option value="아우디">
+				    <option value="람보르기니">
+				    <option value="벤츠">
+				    <option value="BMW">
+				  </datalist><br>
+				<span>차종</span><input type="text" id="Model"><br>
+				<span>가격</span><input type="text" id="Price"><br>
+				<span>크기</span><select id="Weight">
+				  <option value="경차">경차</option>
+				  <option value="소형">소형</option>
+				  <option value="중형">중형</option>
+				  <option value="대형">대형</option>
+				  <option value="버스">버스</option>
+				  <option value="소형SUV">소형SUV</option>
+				  <option value="SUV">SUV</option>
+				</select><br>
+				<div id="ButtonDiv">
+					<button class="w3-btn w3-dark-grey" onclick="Enroll_Car()">차량 등록</button>
+					<button class="w3-btn w3-dark-grey" onclick="Delete_Car()">차량 삭제</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="TP1_201201422.js"></script>
+</html>
