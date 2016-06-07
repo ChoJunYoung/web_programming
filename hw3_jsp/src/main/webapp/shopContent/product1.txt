@@ -1,0 +1,4 @@
+7 inch WiFi Laptop
+187,180
+12
+./img/computer.jpg
